@@ -11,8 +11,8 @@ button.addEventListener("click", () => {
        else {
            nameEl.textContent = '____';
        }
-    })
-  sectionEl.classList.toggle("my-style");
+    });
+  sectionEl.classList.toggle("my-info");
 });
 // get user input
 // use user input to update state
