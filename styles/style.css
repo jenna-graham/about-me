@@ -1,29 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=BhuTuka+Expanded+One&display=swap');
 body {
+    background-image: url(https://cdn.pixabay.com/photo/2018/09/20/04/55/city-3690002_1280.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 
     /* feel free to update these css variables for a quick theme */
-
-    --color1: #e9d8a6ff;
-    --color2: #ee9b00ff;
-    --color3: #CECAC4ff;
-    --color4: #bb3e03ff;
-    --color5: #9b2226ff;
-    --color6: #005f73ff;
-    --color7: #001219ff;
-    --color8: #BDA18Dff;
-    --color9: #EBCCBAff;
-    --color10:#71523Fff;
-    --color11:#524840ff;
-    --color12:#F1F1F1ff;
-    --color13: #b2a9a0ff;
-    
-
-
-
-
-
-
+    --color1: #CECAC4ff;
+    --color2: #252422ff;
+    --color3: #F1F1F1ff;
+    --color4: #b2a9a0ff;
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
 
     /* --color1: hsla(349, 69%, 76%, 1);
@@ -44,7 +30,8 @@ body {
     --footer-height: 30px;
 
     font-family: 'Bebas Neue', cursive;
-    background-color: var(--color13);
+    background-color: var(--color4);
+    
 }
 
 main {
@@ -54,48 +41,84 @@ main {
     align-items: center;
     margin-bottom: calc(var(--footer-height));
 }
-
-.my-style {
-    background color: #e9d8a6ff;
+#background-img {
+    position: relative;
+    width: 100%
 }
 .image {
     position: relative;
     width: 600;
 }
-.image_img {
+.image-img {
     display: block;
     width: 600;
+    
 }
-.image_overlay {
+.image-overlay {
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
-    color: var(--color12);
+    color: var(--color3);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     opacity: 0;
     transition: opacity 0.25s;
+    
 }
-.image_overlay:hover {
+.image-overlay:hover {
     opacity: 1;
 }
-.image_title {
+.image-title {
     font-size: 5em;
     font-weight: bold;
 }
-.image_description {
+.image-description {
     font-size: 8em;
     margin-top: 0.25em;
 }
+#pronouns {
+    font-size: 2em;
+    margin-top: 0;
+    align-content: flex-start;
+    
+    
+}
 .hidden {
-    display: none;
+    display: none; 
+}
+#animal-div {
+    position: relative;
+    width: 200;
+}
+.image-overlay-redd {
+    position:absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    color: var(--color3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+
+}
+.image-overlay-redd:hover {
+    opacity: 1;
+}
+.image-title-redd {
+    font-size: 3em;
+    font-weight: bold;
+    
 }
 section {
-    background-color: var(--color11);
+    background-color: var(--color2);
     max-width: 80%;
     display: flex;
     flex-direction: column;
@@ -105,20 +128,21 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color9);
+    border: solid 2px black;
 }
 
 header {
     display: flex;
-    justify-content: flex-end;
-    background-color: var(--color11);
+    justify-content: flex-start;
+    background-color: var(--color2);
     height: var(--header-height);
     box-shadow: var(--shadow);
-    border: dotted 2px var(--color9);
+    border: solid 2px black;
+    font-family: 'Bebas Neue', cursive;;
 }
 h1 {
     font-size: 2.5rem;
-    color: #001219ff;
+    color: var(--color3);
     font-family: 'BhuTuka Expanded One', cursive;
 }
 h2 {
@@ -139,7 +163,7 @@ p {
     font-size: 2em;
     text-align: center;
     font-family: 'Bebas Neue', cursive;
-    color: var(--color12);
+    color: var(--color3);
 }
 
 footer {
@@ -147,7 +171,7 @@ footer {
     width: 100%;
     bottom: 0;
     display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
+    justify-content: center;
+    background-color: var(--color1);
     box-shadow: var(--shadow);
 }

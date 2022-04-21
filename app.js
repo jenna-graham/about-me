@@ -6,7 +6,6 @@
 const sectionEl = document.getElementById('my-info');
 const animalButton = document.getElementById('animal-button');
 const animalDiv = document.getElementById('animal-div');
-console.log('animal-div');
 // set event listeners
 sectionEl.classList.toggle('my-info');
 animalButton.addEventListener('click', () => {
