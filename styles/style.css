@@ -1,5 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=BhuTuka+Expanded+One&display=swap');
 body {
 
@@ -7,11 +6,23 @@ body {
 
     --color1: #e9d8a6ff;
     --color2: #ee9b00ff;
-    --color3: #ca6702ff;
+    --color3: #CECAC4ff;
     --color4: #bb3e03ff;
     --color5: #9b2226ff;
     --color6: #005f73ff;
     --color7: #001219ff;
+    --color8: #BDA18Dff;
+    --color9: #EBCCBAff;
+    --color10:#71523Fff;
+    --color11:#524840ff;
+    --color12:#F1F1F1ff;
+    --color13: #b2a9a0ff;
+    
+
+
+
+
+
 
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
 
@@ -33,7 +44,7 @@ body {
     --footer-height: 30px;
 
     font-family: 'Bebas Neue', cursive;
-    background-color: var(--color1);
+    background-color: var(--color13);
 }
 
 main {
@@ -43,11 +54,48 @@ main {
     align-items: center;
     margin-bottom: calc(var(--footer-height));
 }
+
 .my-style {
     background color: #e9d8a6ff;
 }
+.image {
+    position: relative;
+    width: 600;
+}
+.image_img {
+    display: block;
+    width: 600;
+}
+.image_overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--color12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.image_overlay:hover {
+    opacity: 1;
+}
+.image_title {
+    font-size: 5em;
+    font-weight: bold;
+}
+.image_description {
+    font-size: 8em;
+    margin-top: 0.25em;
+}
+.hidden {
+    display: none;
+}
 section {
-    background-color: var(--color1);
+    background-color: var(--color11);
     max-width: 80%;
     display: flex;
     flex-direction: column;
@@ -57,25 +105,25 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color5);
+    border: solid 2px var(--color9);
 }
 
 header {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: var(--color11);
     height: var(--header-height);
     box-shadow: var(--shadow);
+    border: dotted 2px var(--color9);
 }
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #001219ff;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'BhuTuka Expanded One', cursive;
 }
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
-    font-family: 'BhuTuka Expanded One', cursive;
 }
 
 .gutter-right {
@@ -88,7 +136,10 @@ header img {
 
 p {
     margin: var(--gutter);
+    font-size: 2em;
     text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color: var(--color12);
 }
 
 footer {
